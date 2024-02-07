@@ -74,6 +74,7 @@ input[type='submit'] {
   color: var(--color-white);
   font-weight: 600;
   padding-block: 0.7rem;
+  margin-block-end: 1rem;
 }
 
 label {
@@ -87,8 +88,60 @@ form > div:nth-of-type(4) label:first-of-type {
 .grid {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  gap: 0.5rem;
+  grid-template-rows: repeat(3, 1fr);
   width: 100%;
+  color: var(--color-white);
+}
+
+.grid p,
+.grid h2 {
+  padding: 0.3rem;
+}
+
+.grid p:nth-of-type(1) {
+  background-color: var(--color-purple-dark);
+  border-top-left-radius: var(--border-radius-inputs);
+}
+
+.grid p:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  background-color: var(--color-purple-light);
+}
+
+.grid p:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  background-color: var(--color-purple-light);
+  border-bottom-left-radius: var(--border-radius-inputs);
+}
+
+.grid p:nth-of-type(5) {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background-color: var(--color-purple-light);
+}
+
+.grid p:nth-of-type(6),
+.grid p:nth-of-type(7),
+.grid p:nth-of-type(4) {
+  background-color: var(--color-purple-light);
+}
+
+.grid p:nth-of-type(7) {
+  border-bottom-right-radius: var(--border-radius-inputs);
+}
+
+.grid h2:nth-of-type(1) {
+  grid-column: 2 / span 1;
+  background-color: var(--color-purple-dark);
+}
+
+.grid h2:nth-of-type(2) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  background-color: var(--color-purple-dark);
+  border-top-right-radius: var(--border-radius-inputs);
 }
 
 h2 {
