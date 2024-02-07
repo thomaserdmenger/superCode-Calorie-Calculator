@@ -54,7 +54,7 @@ form > div {
   width: 100%;
 }
 
-form > div:nth-of-type(3) {
+form > div:nth-of-type(4) {
   flex-direction: row;
 }
 
@@ -80,7 +80,7 @@ label {
   margin-block-end: 0.3rem;
 }
 
-form > div:nth-of-type(3) label:first-of-type {
+form > div:nth-of-type(4) label:first-of-type {
   margin-inline-end: 1rem;
 }
 
