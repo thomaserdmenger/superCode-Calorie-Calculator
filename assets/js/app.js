@@ -1,5 +1,8 @@
 const form = document.querySelector('form');
 
+// Focus 1st input field on page load
+document.querySelector('input[name="size"]').focus();
+
 const submitForm = (event) => {
   event.preventDefault();
 
