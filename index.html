@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/styles.css" />
+    <title>Calories Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <h1>Kalorienrechner</h1>
+        <form>
+          <div>
+            <label for="size">Körpergröße</label>
+            <input
+              type="number"
+              name="size"
+              id="size" />
+          </div>
+          <div>
+            <label for="age">Alter</label>
+            <input
+              type="number"
+              name="age"
+              id="age" />
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+              checked />
+            <label for="female">Weiblich</label>
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="male" />
+            <label for="male">Männlich</label>
+          </div>
+          <div>
+            <select
+              name="action"
+              id="action">
+              <option value="1">Schlafen</option>
+              <option value="2">Nur Sitzen oder Liegen</option>
+              <option value="3">
+                Auschließlich sitzende Tätigkeit mit wenig Aktivität
+              </option>
+              <option value="4">
+                Sitzende Tätigkeit mit zeitweiliger Aktivität
+              </option>
+              <option value="5">
+                Überwiegend gehende oder stehende Tätigkeit
+              </option>
+              <option value="6">Körperlich anstrengende Arbeit</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Submit" />
+          </div>
+        </form>
+        <article class="grid">
+          <div>
+            <p>Grundumsatz</p>
+            <p>Gesamtumsatz</p>
+          </div>
+          <div>
+            <h2>kcal</h2>
+            <p></p>
+            <p></p>
+          </div>
+          <div>
+            <h2>kJ</h2>
+            <p></p>
+            <p></p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
